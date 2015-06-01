@@ -6,7 +6,7 @@ A personal status bar for the Dynamic Window Manager (DWM).
 
 Clone the repository
 
-```git clone git://github.com/madhatter/dwmbar.git```
+```git clone git://github.com/frankhucek/dwmbar.git```
 
 For the first stable version checkout tag 0.2:
 `git checkout 0.2`
