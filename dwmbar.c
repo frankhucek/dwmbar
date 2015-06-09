@@ -262,7 +262,8 @@ char *get_mpd_info(char *buffer) {
 		mpd_response_finish(mpd_conn);
 	}
 	else
-		sprintf(buffer, "Not playing.");
+                sprintf(buffer, "");
+		/*sprintf(buffer, "Not playing.");*/
 
 	mpd_connection_free(mpd_conn);
 	return buffer;
