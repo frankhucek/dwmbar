@@ -253,9 +253,9 @@ char *get_mpd_info(char *buffer) {
 		artist = mpd_song_get_tag(song, MPD_TAG_ARTIST, 0);
 
 		if (mpd_status_get_state(status) == MPD_STATE_PLAY)
-			sprintf(buffer, "|> %s - %s", artist, title);
+			sprintf(buffer, "ê æ %s - %s\t", artist, title);
 		else if (mpd_status_get_state(status) == MPD_STATE_PAUSE)
-			sprintf(buffer, "|| %s - %s", artist, title);
+			sprintf(buffer, "ê ç %s - %s\t", artist, title);
 
 		mpd_song_free(song);
 		mpd_status_free(status);
@@ -406,7 +406,7 @@ int main()
 		if (ENABLE_FAN)
 			sprintf(status +strlen(status), "::%s", fans);*/
 
-		sprintf(status +strlen(status), "|| %s", clock);
+		sprintf(status +strlen(status), "É %s", clock);
 
 		XStoreName(dpy, rootwin, status);
 		XFlush(dpy);
